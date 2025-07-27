@@ -2,42 +2,37 @@
   "title": "Microsoft Word - LTC_CLAIM_FORMS .doc",
   "outline": [
     {
-      "level": "h4",
+      "level": "h3",
       "text": "Application form for grant of LTC advance",
       "page": 1
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "Name of the Government Servant",
       "page": 1
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "Designation",
       "page": 1
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "Date of entering the Central Government",
       "page": 1
     },
     {
-      "level": "h4",
-      "text": "Service",
-      "page": 1
-    },
-    {
-      "level": "h4",
+      "level": "h3",
       "text": "PAY  SI  NPA",
       "page": 1
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "Whether permanent or temporary",
       "page": 1
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "Home Town as recorded in the Service Book",
       "page": 1
     },
@@ -47,17 +42,17 @@
       "page": 1
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "so whether entitled to LTC",
       "page": 1
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "Whether the concession is to be availed for",
       "page": 1
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "visiting home town and if so block for which",
       "page": 1
     },
@@ -82,17 +77,17 @@
       "page": 1
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "10.",
       "page": 1
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "Single",
       "page": 1
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "rail",
       "page": 1
     },
@@ -102,18 +97,8 @@
       "page": 1
     },
     {
-      "level": "text",
-      "text": "fare",
-      "page": 1
-    },
-    {
-      "level": "text",
+      "level": "h3",
       "text": "from",
-      "page": 1
-    },
-    {
-      "level": "text",
-      "text": "the",
       "page": 1
     },
     {
@@ -127,7 +112,7 @@
       "page": 1
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "11.",
       "page": 1
     },
@@ -137,27 +122,22 @@
       "page": 1
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "S.No",
       "page": 1
     },
     {
-      "level": "h4",
-      "text": "Name",
-      "page": 1
-    },
-    {
-      "level": "h4",
+      "level": "h3",
       "text": "Age",
       "page": 1
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "Relationship",
       "page": 1
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "12. Amount of advance required.",
       "page": 1
     },
@@ -177,7 +157,7 @@
       "page": 1
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "In the event of cancellation of the journey or if I fail to produce the tickets within ten days of receipt of",
       "page": 1
     },
@@ -187,12 +167,7 @@
       "page": 1
     },
     {
-      "level": "h4",
-      "text": "Date",
-      "page": 1
-    },
-    {
-      "level": "text",
+      "level": "h3",
       "text": "Signature of Government Servant.",
       "page": 1
     }

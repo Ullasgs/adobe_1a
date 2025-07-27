@@ -43,16 +43,6 @@
     },
     {
       "level": "text",
-      "text": "4 credits of Math",
-      "page": 1
-    },
-    {
-      "level": "text",
-      "text": "4 credits of Science",
-      "page": 1
-    },
-    {
-      "level": "text",
       "text": "4 credits of STEM-designated electives",
       "page": 1
     },
@@ -82,12 +72,12 @@
       "page": 1
     },
     {
-      "level": "h4",
-      "text": "the 4 years .",
+      "level": "text",
+      "text": "the 4 years.",
       "page": 1
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "Join and actively participate in a",
       "page": 1
     },
@@ -122,7 +112,7 @@
       "page": 1
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "science course should be an AP",
       "page": 1
     },
@@ -152,27 +142,12 @@
       "page": 1
     },
     {
-      "level": "text",
-      "text": "required minimum total of 12",
-      "page": 1
-    },
-    {
-      "level": "text",
-      "text": "the 4 years.",
-      "page": 1
-    },
-    {
-      "level": "text",
-      "text": "club every year of attendance.",
-      "page": 1
-    },
-    {
-      "level": "text",
+      "level": "h3",
       "text": "Either participate in an internship or",
       "page": 1
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "design and implement a community",
       "page": 1
     },
@@ -207,7 +182,7 @@
       "page": 1
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "Encourage students to pursue higher education and major in",
       "page": 1
     },
@@ -217,7 +192,7 @@
       "page": 1
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "Promote interactions with STEM professionals to learn about",
       "page": 1
     },
@@ -227,7 +202,7 @@
       "page": 1
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "Support field experiences connected to the world outside of",
       "page": 1
     },
@@ -242,7 +217,7 @@
       "page": 1
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "military that a student has completed a comprehensive course",
       "page": 1
     },

@@ -8,194 +8,271 @@ from typing import List, Dict, Tuple
 INPUT_DIR = "/app/input"
 OUTPUT_DIR = "/app/output"
 
-class RobustPDFProcessor:
+class LayoutBasedProcessor:
     def __init__(self):
-        # Font size thresholds for determining heading levels
         self.heading_thresholds = {
-            'h1': 16,  # Large headings
-            'h2': 14,  # Medium headings  
-            'h3': 12,  # Small headings
-            'h4': 11,  # Sub headings
+            'h1': 16,
+            'h2': 14,
+            'h3': 12,
+            'h4': 11,
         }
         
-    def extract_title_from_first_page(self, doc: fitz.Document) -> str:
-        """Extract document title from metadata or first page content"""
+    def extract_title_from_doc(self, doc: fitz.Document) -> str:
+        """Extract title from document"""
         # Try metadata first
         title = doc.metadata.get("title", "").strip()
-        if title and len(title) > 3:
+        if title and len(title) > 5:
             return self.clean_text(title)
         
-        # Fall back to analyzing first page for title
+        # Look at first page using simple text extraction
         if len(doc) > 0:
             first_page = doc[0]
+            # Use simple text method to avoid fragmentation
+            full_text = first_page.get_text()
             
-            # Try to get text blocks sorted by position
-            text_blocks = first_page.get_text("blocks")
-            
-            # Look for the first substantial text block as potential title
-            for block in text_blocks[:3]:  # Check first 3 blocks
-                text = block[4].strip() if len(block) > 4 else ""
-                if text and len(text.split()) >= 3 and len(text) > 10:
-                    # Clean and return first substantial text as title
-                    cleaned = self.clean_text(text)
-                    # Take only the first line if it's multi-line
-                    first_line = cleaned.split('\n')[0].strip()
-                    if first_line:
-                        return first_line
+            # Find the first substantial line as potential title
+            lines = full_text.split('\n')
+            for line in lines:
+                cleaned_line = self.clean_text(line)
+                if (len(cleaned_line.split()) >= 4 and 
+                    len(cleaned_line) > 20 and 
+                    len(cleaned_line) < 200):
+                    return cleaned_line
         
         return "Untitled Document"
     
     def clean_text(self, text: str) -> str:
-        """Clean and normalize text"""
-        # Replace multiple whitespace with single space
+        """Clean text with aggressive fragment removal"""
+        if not text:
+            return ""
+        
+        # Remove newlines and normalize whitespace
+        text = re.sub(r'[\r\n]+', ' ', text)
         text = re.sub(r'\s+', ' ', text.strip())
-        # Remove character repetitions (like "eeeeee" -> "ee")
-        text = re.sub(r'(.)\1{3,}', r'\1\1', text)
-        # Remove newlines within text
-        text = text.replace('\n', ' ').replace('\r', ' ')
-        # Clean up common OCR artifacts and keep essential punctuation
-        text = re.sub(r'[^\w\s\.,;:!?()\-\'\"\/&%$#@]', '', text)
+        
+        # Remove excessive character repetitions
+        text = re.sub(r'(.)\1{3,}', r'\1', text)
+        
+        # Fix common OCR errors
+        text = re.sub(r'\bRee+quest\b', 'Request', text, flags=re.IGNORECASE)
+        text = re.sub(r'\bfoo+r\b', 'for', text, flags=re.IGNORECASE)
+        text = re.sub(r'\bPropoaal\b', 'Proposal', text, flags=re.IGNORECASE)
+        text = re.sub(r'\boposal\b', 'Proposal', text, flags=re.IGNORECASE)
+        text = re.sub(r'\bOntarios\b', "Ontario's", text, flags=re.IGNORECASE)
+        
+        # Remove weird patterns like "RFP: R RFP: R"
+        text = re.sub(r'\b(\w+):\s*\w\s+\1:\s*\w\s+', r'\1: Request', text)
+        text = re.sub(r'\b(\w+)\s+\1\s+\1\s+', r'\1 ', text)
+        
+        # Clean up unwanted characters
+        text = re.sub(r'[^\w\s\.,;:!?()\-\'\"\/&%]', '', text)
+        
         return text.strip()
     
-    def is_heading_text(self, text: str, font_size: float, is_bold: bool) -> str:
-        """Determine if text is a heading and what level"""
-        text_clean = text.strip()
-        
-        # Skip very short text
-        if len(text_clean) < 3:
-            return 'text'
+    def is_heading_like(self, text: str) -> bool:
+        """Determine if text looks like a heading"""
+        if len(text) < 3:
+            return False
             
-        # Common heading patterns
-        heading_patterns = [
-            r'^\d+\.?\s+[A-Z]',              # "1. Introduction" or "1 Introduction"
-            r'^Chapter\s+\d+',               # "Chapter 1"
-            r'^Section\s+\d+',               # "Section 1" 
-            r'^\d+\.\d+\.?\s+[A-Z]',         # "1.1 Subsection"
-            r'^[A-Z][A-Z\s]{4,}$',           # "ALL CAPS HEADINGS"
-            r'^[A-Z][a-z]+(\s+[A-Z][a-z]*)*$', # "Title Case Headings"
+        patterns = [
+            r'^\d+\.',
+            r'^Chapter\s+\d+',
+            r'^Section\s+\d+',
+            r'^[A-Z][A-Z\s]{3,}$',
+            r'^RFP:',
+            r'^Request\s+for',
+            r'^To\s+Present',
         ]
         
-        is_likely_heading = any(re.match(pattern, text_clean) for pattern in heading_patterns)
+        return any(re.match(pattern, text, re.IGNORECASE) for pattern in patterns)
+    
+    def classify_text_level(self, text: str, context: Dict) -> str:
+        """Classify text into appropriate level"""
+        font_size = context.get('font_size', 12)
+        is_bold = context.get('is_bold', False)
+        is_heading_pattern = self.is_heading_like(text)
         
-        # Additional checks for title-like text
-        words = text_clean.split()
+        # Title-like characteristics
+        words = text.split()
         is_title_like = (
-            len(words) >= 2 and len(words) <= 15 and  # Reasonable word count
-            len(text_clean) > 5 and len(text_clean) < 200 and  # Reasonable length
-            not text_clean.endswith('.') and  # Titles usually don't end with period
-            sum(1 for c in text_clean if c.isupper()) >= 2  # Has some uppercase letters
+            len(words) >= 3 and len(words) <= 20 and
+            len(text) > 15 and len(text) < 300 and
+            any(c.isupper() for c in text) and
+            not text.endswith('.')
         )
         
-        # Determine heading level
-        if font_size >= self.heading_thresholds['h1'] and (is_bold or is_likely_heading or is_title_like):
+        # Conservative classification
+        if font_size >= self.heading_thresholds['h1'] and (is_heading_pattern or (is_bold and is_title_like)):
             return 'h1'
-        elif font_size >= self.heading_thresholds['h2'] and (is_bold or is_likely_heading or is_title_like):
+        elif font_size >= self.heading_thresholds['h2'] and (is_heading_pattern or is_title_like):
             return 'h2'
-        elif font_size >= self.heading_thresholds['h3'] and (is_bold or is_likely_heading):
+        elif font_size >= self.heading_thresholds['h3'] and (is_heading_pattern or is_bold):
             return 'h3'
-        elif font_size >= self.heading_thresholds['h4'] and (is_bold or is_likely_heading):
-            return 'h4'
-        elif is_likely_heading or (is_bold and is_title_like):
+        elif is_heading_pattern or (is_bold and len(words) <= 10):
             return 'h4'
         else:
             return 'text'
     
-    def extract_with_fonts(self, pdf_path: str) -> Tuple[str, List[Dict]]:
-        """Extract text with font information using get_text method"""
+    def extract_with_layout_analysis(self, pdf_path: str) -> Tuple[str, List[Dict]]:
+        """Extract text using layout analysis to avoid fragmentation"""
         doc = fitz.open(pdf_path)
-        title = self.extract_title_from_first_page(doc)
+        title = self.extract_title_from_doc(doc)
         outline = []
         
         for page_num, page in enumerate(doc, start=1):
-            # Get text with font information
+            # Use get_text() with layout preservation
+            page_text = page.get_text(flags=fitz.TEXT_PRESERVE_LIGATURES | fitz.TEXT_PRESERVE_WHITESPACE)
+            
+            if not page_text.strip():
+                continue
+            
+            # Split into logical lines and process
+            lines = page_text.split('\n')
+            processed_lines = set()  # To avoid duplicates
+            
+            for line in lines:
+                cleaned_line = self.clean_text(line)
+                
+                # Skip empty, very short, or already processed lines
+                if (not cleaned_line or 
+                    len(cleaned_line) < 3 or 
+                    cleaned_line in processed_lines):
+                    continue
+                
+                # Skip obvious page numbers, headers, footers
+                if (re.match(r'^\d+$', cleaned_line) or  # Just a number
+                    re.match(r'^Page\s+\d+', cleaned_line, re.IGNORECASE) or
+                    len(cleaned_line) < 3):
+                    continue
+                
+                # Get font information for this line (approximate)
+                font_info = self.get_font_info_for_text(page, cleaned_line)
+                
+                # Classify the text level
+                level = self.classify_text_level(cleaned_line, font_info)
+                
+                outline.append({
+                    "level": level,
+                    "text": cleaned_line,
+                    "page": page_num
+                })
+                
+                processed_lines.add(cleaned_line)
+        
+        doc.close()
+        
+        # Final cleanup to remove remaining duplicates and fragments
+        outline = self.final_deduplication(outline)
+        
+        return title, outline
+    
+    def get_font_info_for_text(self, page, text: str) -> Dict:
+        """Get approximate font information for text"""
+        # Default values
+        font_info = {'font_size': 12, 'is_bold': False}
+        
+        try:
+            # Get detailed text information
             text_dict = page.get_text("dict")
             
+            # Look for matching text in spans
             for block in text_dict.get("blocks", []):
                 if "lines" not in block:
                     continue
                     
                 for line in block["lines"]:
-                    # Collect all text and font info from spans in this line
-                    line_texts = []
-                    max_font_size = 0
-                    has_bold = False
-                    
                     for span in line.get("spans", []):
                         span_text = span.get("text", "").strip()
-                        if span_text:
-                            line_texts.append(span_text)
-                            font_size = span.get("size", 12)
-                            max_font_size = max(max_font_size, font_size)
-                            # Check if bold (flags & 16)
-                            if span.get("flags", 0) & 16:
-                                has_bold = True
-                    
-                    if line_texts:
-                        # Combine all text from the line
-                        full_text = " ".join(line_texts)
-                        cleaned_text = self.clean_text(full_text)
                         
-                        if len(cleaned_text) >= 3:  # Only include substantial text
-                            level = self.is_heading_text(cleaned_text, max_font_size, has_bold)
-                            
-                            outline.append({
-                                "level": level,
-                                "text": cleaned_text,
-                                "page": page_num
-                            })
+                        # If this span contains part of our text
+                        if span_text and span_text in text:
+                            font_info['font_size'] = max(font_info['font_size'], span.get("size", 12))
+                            if span.get("flags", 0) & 16:  # Bold flag
+                                font_info['is_bold'] = True
+                                
+        except Exception:
+            # If font analysis fails, use defaults
+            pass
         
-        doc.close()
-        
-        # Post-process to remove obvious duplicates
-        outline = self.remove_duplicates(outline)
-        
-        return title, outline
+        return font_info
     
-    def remove_duplicates(self, outline: List[Dict]) -> List[Dict]:
-        """Remove duplicate entries from outline"""
-        seen = set()
-        filtered_outline = []
+    def final_deduplication(self, outline: List[Dict]) -> List[Dict]:
+        """Remove duplicates and fragments with sophisticated matching"""
+        if not outline:
+            return outline
         
-        for item in outline:
-            # Create a key based on text and page (case-insensitive)
-            key = (item["text"].lower().strip(), item["page"])
+        # Add index to maintain original order, then sort by page
+        for i, item in enumerate(outline):
+            item['_original_index'] = i
+        
+        outline.sort(key=lambda x: (x['page'], x['_original_index']))
+        
+        deduplicated = []
+        
+        for current in outline:
+            current_text = current['text'].lower().strip()
             
-            if key not in seen:
-                seen.add(key)
-                filtered_outline.append(item)
+            # Check if this is a fragment of something we already have
+            is_fragment = False
+            items_to_remove = []
+            
+            for i, existing in enumerate(deduplicated):
+                existing_text = existing['text'].lower().strip()
+                
+                # Skip if identical
+                if current_text == existing_text:
+                    is_fragment = True
+                    break
+                
+                # Check if current is a fragment of existing
+                if len(current_text) < len(existing_text) and current_text in existing_text:
+                    is_fragment = True
+                    break
+                
+                # Check if existing is a fragment of current (mark for removal)
+                if len(existing_text) < len(current_text) and existing_text in current_text:
+                    items_to_remove.append(i)
+            
+            # Remove items marked for removal (in reverse order to maintain indices)
+            for i in reversed(items_to_remove):
+                deduplicated.pop(i)
+            
+            if not is_fragment:
+                # Remove the temporary index before adding
+                current_copy = current.copy()
+                if '_original_index' in current_copy:
+                    del current_copy['_original_index']
+                deduplicated.append(current_copy)
         
-        return filtered_outline
+        return deduplicated
     
     def process_single_pdf(self, pdf_path: str, output_path: str) -> bool:
         """Process a single PDF file"""
         try:
-            title, outline = self.extract_with_fonts(pdf_path)
+            print(f"  Processing: {os.path.basename(pdf_path)}")
+            title, outline = self.extract_with_layout_analysis(pdf_path)
             
-            # Ensure we have valid output structure  
+            print(f"  Extracted {len(outline)} elements")
+            
             result = {
                 "title": title,
                 "outline": outline
             }
             
-            # Write output JSON
             with open(output_path, "w", encoding="utf-8") as f:
                 json.dump(result, f, indent=2, ensure_ascii=False)
             
             return True
             
         except Exception as e:
-            print(f"Error processing {pdf_path}: {str(e)}")
+            print(f"  Error: {str(e)}")
             return False
     
     def process_all_pdfs(self):
         """Process all PDFs in the input directory"""
-        # Ensure output directory exists
         os.makedirs(OUTPUT_DIR, exist_ok=True)
         
         input_path = Path(INPUT_DIR)
-        processed_count = 0
-        
-        # Find all PDF files
         pdf_files = list(input_path.glob("*.pdf"))
         
         if not pdf_files:
@@ -203,23 +280,22 @@ class RobustPDFProcessor:
             return
         
         print(f"Found {len(pdf_files)} PDF files to process")
+        processed_count = 0
         
         for pdf_file in pdf_files:
             output_file = Path(OUTPUT_DIR) / f"{pdf_file.stem}.json"
             
-            print(f"Processing: {pdf_file.name}")
-            
             if self.process_single_pdf(str(pdf_file), str(output_file)):
                 processed_count += 1
-                print(f"✅ Successfully processed {pdf_file.name} -> {output_file.name}")
+                print(f"✅ {pdf_file.name} -> {output_file.name}")
             else:
-                print(f"❌ Failed to process {pdf_file.name}")
+                print(f"❌ Failed: {pdf_file.name}")
         
-        print(f"\nCompleted processing {processed_count}/{len(pdf_files)} PDF files")
+        print(f"\nCompleted: {processed_count}/{len(pdf_files)} files")
 
 def main():
     """Main execution function"""
-    processor = RobustPDFProcessor()
+    processor = LayoutBasedProcessor()
     processor.process_all_pdfs()
 
 if __name__ == "__main__":

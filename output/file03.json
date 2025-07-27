@@ -2,48 +2,13 @@
   "title": "To Present a Proposal for Developing the Business Plan for the Ontario Digital Library",
   "outline": [
     {
-      "level": "h2",
+      "level": "h3",
       "text": "Ontarios Libraries",
       "page": 1
     },
     {
-      "level": "h2",
-      "text": "Working Together",
-      "page": 1
-    },
-    {
       "level": "h1",
-      "text": "RFP: R",
-      "page": 1
-    },
-    {
-      "level": "h1",
-      "text": "RFP: Reequest f",
-      "page": 1
-    },
-    {
-      "level": "text",
-      "text": "quest f",
-      "page": 1
-    },
-    {
-      "level": "text",
-      "text": "quest foor Pr",
-      "page": 1
-    },
-    {
-      "level": "text",
-      "text": "r Pr",
-      "page": 1
-    },
-    {
-      "level": "text",
-      "text": "r Proposal",
-      "page": 1
-    },
-    {
-      "level": "text",
-      "text": "oposal",
+      "text": "RFP: Request f",
       "page": 1
     },
     {
@@ -52,22 +17,12 @@
       "page": 1
     },
     {
-      "level": "h1",
-      "text": "the Business Plan for the Ontario",
-      "page": 1
-    },
-    {
-      "level": "h1",
-      "text": "Digital Library",
-      "page": 1
-    },
-    {
       "level": "text",
       "text": "March 21, 2003",
       "page": 1
     },
     {
-      "level": "text",
+      "level": "h2",
       "text": "The Ontario Digital Library will make Ontario a better place to study, work and live by ensuring that",
       "page": 1
     },
@@ -82,12 +37,12 @@
       "page": 1
     },
     {
-      "level": "h1",
+      "level": "h3",
       "text": "Ontarios Digital Library",
       "page": 2
     },
     {
-      "level": "h2",
+      "level": "h3",
       "text": "A Critical Component for Implementing Ontarios Road Map to",
       "page": 2
     },
@@ -102,12 +57,12 @@
       "page": 2
     },
     {
-      "level": "h4",
-      "text": "The purpose of this Request for Proposal ( RFP ) is to invite firms and/or consultants to",
+      "level": "h3",
+      "text": "The purpose of this Request for Proposal (RFP) is to invite firms and/or consultants to",
       "page": 2
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "present a proposal for developing the business plan for the Ontario Digital Library (ODL).",
       "page": 2
     },
@@ -117,7 +72,7 @@
       "page": 2
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "assist people as they learn, work, and enhance their quality of life. The business plan to be",
       "page": 2
     },
@@ -127,78 +82,68 @@
       "page": 2
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "how the ODL will be implemented, including the timeline",
       "page": 2
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "the financial plan for the implementation",
       "page": 2
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "the financial plan for the first 2 operating years, including capital and operating costs,",
       "page": 2
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "revenues, etc.",
       "page": 2
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "a financial forecast for the succeeding 2 operating years",
       "page": 2
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "the services and products to be delivered by the ODL",
       "page": 2
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "how the ODL will operate and be managed following the implementation",
       "page": 2
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "who will be involved, and what their role/responsibility will be, for both the",
       "page": 2
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "implementation and operational stages",
       "page": 2
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "the marketing and communications plan for the ODL",
       "page": 2
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "This business plan must be completed and approved by the ODL Steering Committee no",
       "page": 2
     },
     {
-      "level": "text",
-      "text": "later than September 30, 2003",
-      "page": 2
-    },
-    {
-      "level": "text",
-      "text": "Timeline:",
-      "page": 2
-    },
-    {
-      "level": "text",
+      "level": "h3",
       "text": "Those firms/consultants intended to submit a proposal to this RFP must indicate their",
       "page": 2
     },
     {
-      "level": "h4",
-      "text": "intention to do so in an e-mail to Michael Ridley ( mridley@uoguelph.ca ) by April 11 th .",
+      "level": "h3",
+      "text": "intention to do so in an e-mail to Michael Ridley (mridleyuoguelph.ca) by April 11th.",
       "page": 2
     },
     {
@@ -207,62 +152,52 @@
       "page": 2
     },
     {
-      "level": "text",
-      "text": "( lmoore@accessola.com ), Executive Director, The Ontario Library Association, 100 Lombard",
+      "level": "h3",
+      "text": "(lmooreaccessola.com), Executive Director, The Ontario Library Association, 100 Lombard",
       "page": 2
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "St., Suite 303, Toronto, ON M5C 1M3. Proposals must be received by Noon on Monday,",
       "page": 2
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "April 21, 2003.",
       "page": 2
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "Those proposals that are short-listed will be invited to discuss their proposal during the week",
       "page": 2
     },
     {
-      "level": "h4",
-      "text": "of April 28, 2003 . No presentation will be expected. Firms or consultants invited to an",
+      "level": "h3",
+      "text": "of April 28, 2003. No presentation will be expected. Firms or consultants invited to an",
       "page": 2
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "interview will be expected to discuss the project and their approach with the selection",
       "page": 2
     },
     {
-      "level": "text",
-      "text": "committee .",
-      "page": 2
-    },
-    {
-      "level": "h4",
+      "level": "h3",
       "text": "Contracts with the firm/consultant will be signed the week of May 5, 2003 with the work to",
       "page": 2
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "commence as soon as possible thereafter.",
       "page": 2
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "RFP: To Develop the Ontario Digital Library Business Plan",
       "page": 2
     },
     {
-      "level": "text",
-      "text": "March 2003",
-      "page": 2
-    },
-    {
-      "level": "text",
+      "level": "h3",
       "text": "Please note that we reserve the right not to select any of the submitted proposals and may",
       "page": 3
     },
@@ -277,12 +212,12 @@
       "page": 3
     },
     {
-      "level": "h4",
-      "text": "mail ( mridley@uoguelph.ca ) only by 3:00 p.m. on Friday April 18th . All questions and",
+      "level": "h3",
+      "text": "mail (mridleyuoguelph.ca) only by 3:00 p.m. on Friday April 18th. All questions and",
       "page": 3
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "responses will be shared with those who have indicated that they will be submitting a",
       "page": 3
     },
@@ -293,17 +228,12 @@
     },
     {
       "level": "text",
-      "text": "Ridley by April 11 th that they will be submitting a proposal will not receive any further",
+      "text": "Ridley by April 11th that they will be submitting a proposal will not receive any further",
       "page": 3
     },
     {
       "level": "text",
       "text": "information or question responses.",
-      "page": 3
-    },
-    {
-      "level": "h3",
-      "text": "Background",
       "page": 3
     },
     {
@@ -327,7 +257,7 @@
       "page": 3
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "Libraries that serve very different clientele recognize that by working together they can create",
       "page": 3
     },
@@ -393,11 +323,11 @@
     },
     {
       "level": "text",
-      "text": "The concept of an ODL is a key element in The Roadmap to Prosperity , a strategic plan to",
+      "text": "The concept of an ODL is a key element in The Roadmap to Prosperity, a strategic plan to",
       "page": 3
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "envision and attain Ontarios economic goal prepared by the Ontario Jobs and Investment",
       "page": 3
     },
@@ -417,7 +347,7 @@
       "page": 3
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "leverage this investment to help connect all citizens to the electronic information they need as",
       "page": 3
     },
@@ -457,7 +387,7 @@
       "page": 3
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "leading edge for Ontario but several jurisdictions have forged the path with collaborative",
       "page": 3
     },
@@ -467,17 +397,7 @@
       "page": 3
     },
     {
-      "level": "h4",
-      "text": "RFP: To Develop the Ontario Digital Library Business Plan",
-      "page": 3
-    },
-    {
-      "level": "text",
-      "text": "March 2003",
-      "page": 3
-    },
-    {
-      "level": "text",
+      "level": "h3",
       "text": "was incorporated in 1997 as a province-wide library consortium. TAL works collaboratively",
       "page": 4
     },
@@ -487,27 +407,27 @@
       "page": 4
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "public, post-secondary, special, government and regional libraries. Unlike ODL, TAL does",
       "page": 4
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "not include elementary or secondary schools. However, the timeline and funding we are",
       "page": 4
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "proposing for ODL is comparable to TALs experience. TALs business planning took several",
       "page": 4
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "years. TALs implementation plan was supported by 8 million dollars in provincially shared",
       "page": 4
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "funding, spread over three years, later revised to 15 million dollars over 4 years. Not only is",
       "page": 4
     },
@@ -517,12 +437,12 @@
       "page": 4
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "schools as partners; it has 250 member libraries. ODL envisions universal access for all",
       "page": 4
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "10,000,000 Ontarians, with more than 5000 Ontario libraries as partners. Although ODL can",
       "page": 4
     },
@@ -532,7 +452,7 @@
       "page": 4
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "TAL.",
       "page": 4
     },
@@ -542,17 +462,17 @@
       "page": 4
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "services and resources to the citizens of Ontario. It will use local libraries as the entry point for",
       "page": 4
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "common resources The ODL will recognize the unique responsibilities and needs of public",
       "page": 4
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "libraries, school libraries, college and university libraries and special libraries. The ODL",
       "page": 4
     },
@@ -562,7 +482,7 @@
       "page": 4
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "there is mutual benefit and to support the common mandates of local libraries.",
       "page": 4
     },
@@ -572,7 +492,7 @@
       "page": 4
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "Equitable access for all Ontarians:",
       "page": 4
     },
@@ -582,62 +502,57 @@
       "page": 4
     },
     {
-      "level": "text",
-      "text": "Ontario citizens",
-      "page": 4
-    },
-    {
-      "level": "text",
+      "level": "h3",
       "text": "We will eliminate barriers to the access to information and create more consistent",
       "page": 4
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "services for library clients.",
       "page": 4
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "Shared decision-making and accountability:",
       "page": 4
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "We will facilitate consensus among members regarding ODLs portfolio of electronic",
       "page": 4
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "licenses and services",
       "page": 4
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "We will balance the interests and realities of small and large as well as rich and poor",
       "page": 4
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "communities and institutions.",
       "page": 4
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "Shared governance structure:",
       "page": 4
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "We will share decision-making in order to enable the people we serve.",
       "page": 4
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "We will work based on an underlying assumption of trust and synergy.",
       "page": 4
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "Shared funding:",
       "page": 4
     },
@@ -647,32 +562,22 @@
       "page": 4
     },
     {
-      "level": "h4",
-      "text": "and put Ontario dollars to work for everyone .",
+      "level": "h3",
+      "text": "and put Ontario dollars to work for everyone.",
       "page": 4
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "We will be willing to pool talents and dollars in order to provide common services that are",
       "page": 4
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "truly greater than those that can be maintained by individual institutions.",
       "page": 4
     },
     {
-      "level": "h4",
-      "text": "RFP: To Develop the Ontario Digital Library Business Plan",
-      "page": 4
-    },
-    {
-      "level": "text",
-      "text": "March 2003",
-      "page": 4
-    },
-    {
-      "level": "h4",
+      "level": "h3",
       "text": "Local points of entry:",
       "page": 5
     },
@@ -697,7 +602,7 @@
       "page": 5
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "Access:",
       "page": 5
     },
@@ -707,22 +612,22 @@
       "page": 5
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "to credible web sites and electronic resources",
       "page": 5
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "to digital government information",
       "page": 5
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "to local digital collections",
       "page": 5
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "Guidance and Advice:",
       "page": 5
     },
@@ -742,47 +647,47 @@
       "page": 5
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "Training:",
       "page": 5
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "for library workers",
       "page": 5
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "for the general public",
       "page": 5
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "Provincial Purchasing & Licensing:",
       "page": 5
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "of electronic content on a consortia basis for all member libraries",
       "page": 5
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "Technological Support:",
       "page": 5
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "of common standards for the preservation and archiving local digital content",
       "page": 5
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "of a common interface to ODL resources and services that can be imbedded in local",
       "page": 5
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "library web sites",
       "page": 5
     },
@@ -792,12 +697,12 @@
       "page": 5
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "For each Ontario citizen it could mean:",
       "page": 5
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "One local point of entry to access seamless electronic library services and",
       "page": 5
     },
@@ -817,7 +722,7 @@
       "page": 5
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "Confidence that the electronic services and sources they  and their children",
       "page": 5
     },
@@ -832,28 +737,18 @@
       "page": 5
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "Electronic information and tools that enhance job skills and the learning",
       "page": 5
     },
     {
-      "level": "text",
-      "text": "experience",
-      "page": 5
-    },
-    {
-      "level": "h4",
+      "level": "h3",
       "text": "For each Ontario student it could mean:",
       "page": 5
     },
     {
       "level": "text",
       "text": "One local point of entry to quality, curriculum- based electronic information",
-      "page": 5
-    },
-    {
-      "level": "text",
-      "text": "resources and services",
       "page": 5
     },
     {
@@ -867,32 +762,22 @@
       "page": 5
     },
     {
-      "level": "h4",
-      "text": "RFP: To Develop the Ontario Digital Library Business Plan",
-      "page": 5
-    },
-    {
-      "level": "text",
-      "text": "March 2003",
-      "page": 5
-    },
-    {
       "level": "text",
       "text": "Confidence that the services and resources people are using are credible,",
       "page": 6
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "available when they need them and adaptable to different learning styles",
       "page": 6
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "For each Ontario library it could mean:",
       "page": 6
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "One point of entry for themselves and their clientele to quality electronic",
       "page": 6
     },
@@ -903,16 +788,11 @@
     },
     {
       "level": "text",
-      "text": "and services",
-      "page": 6
-    },
-    {
-      "level": "text",
       "text": "The opportunity to show case their local community, collections, services, and",
       "page": 6
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "expertise",
       "page": 6
     },
@@ -922,12 +802,12 @@
       "page": 6
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "to provide a seamless gateway to digital resources and services",
       "page": 6
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "For the Ontario government it could mean:",
       "page": 6
     },
@@ -938,7 +818,7 @@
     },
     {
       "level": "text",
-      "text": "connecting to portal initiatives .",
+      "text": "connecting to portal initiatives.",
       "page": 6
     },
     {
@@ -952,7 +832,7 @@
       "page": 6
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "Improved access and flexibility for all students at all ages and stages",
       "page": 6
     },
@@ -962,17 +842,17 @@
       "page": 6
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "The opportunity to address emerging job skills shortages and facilitate school",
       "page": 6
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "to work and job to job transitions with the necessary information and",
       "page": 6
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "knowledge supports and tools",
       "page": 6
     },
@@ -1002,12 +882,12 @@
       "page": 6
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "The Business Plan to be Developed",
       "page": 6
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "The business plan which needs to be developed for the ODL must be a formal business plan",
       "page": 6
     },
@@ -1022,7 +902,7 @@
       "page": 6
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "2007. The planning process must also secure the full commitment of all stakeholders, as",
       "page": 6
     },
@@ -1037,72 +917,12 @@
       "page": 6
     },
     {
-      "level": "text",
-      "text": "how the ODL will be implemented, including the timeline",
-      "page": 6
-    },
-    {
-      "level": "text",
-      "text": "the financial plan for the implementation",
-      "page": 6
-    },
-    {
-      "level": "text",
-      "text": "the financial plan for the first 2 operating years, including capital and operating costs,",
-      "page": 6
-    },
-    {
-      "level": "text",
-      "text": "revenues, etc.",
-      "page": 6
-    },
-    {
-      "level": "text",
-      "text": "a financial forecast for the succeeding 2 operating years",
-      "page": 6
-    },
-    {
-      "level": "text",
-      "text": "the services and products to be delivered by the ODL",
-      "page": 6
-    },
-    {
-      "level": "text",
-      "text": "how the ODL will operate and be managed following the implementation",
-      "page": 6
-    },
-    {
-      "level": "text",
-      "text": "who will be involved, and what their role/responsibility will be, for both the",
-      "page": 6
-    },
-    {
-      "level": "text",
-      "text": "implementation and operational stages",
-      "page": 6
-    },
-    {
-      "level": "h4",
-      "text": "RFP: To Develop the Ontario Digital Library Business Plan",
-      "page": 6
-    },
-    {
-      "level": "text",
-      "text": "March 2003",
-      "page": 6
-    },
-    {
-      "level": "text",
-      "text": "the marketing and communications plan for the ODL",
-      "page": 7
-    },
-    {
-      "level": "text",
+      "level": "h3",
       "text": "the commitment of all stakeholders to their responsibilities",
       "page": 7
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "The process of developing this business plan must be extremely consultative to ensure that",
       "page": 7
     },
@@ -1122,7 +942,7 @@
       "page": 7
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "enormous differences in the financial resources available to libraries mandated to provide",
       "page": 7
     },
@@ -1182,7 +1002,7 @@
       "page": 7
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "Approach and Specific Proposal Requirements",
       "page": 7
     },
@@ -1202,7 +1022,7 @@
       "page": 7
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "be expected to travel and communicate regularly with various stakeholders as well as with",
       "page": 7
     },
@@ -1237,7 +1057,7 @@
       "page": 7
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "planning and building stakeholder commitment",
       "page": 7
     },
@@ -1252,7 +1072,7 @@
       "page": 7
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "including a timeline",
       "page": 7
     },
@@ -1262,22 +1082,7 @@
       "page": 7
     },
     {
-      "level": "text",
-      "text": "structure",
-      "page": 7
-    },
-    {
-      "level": "h4",
-      "text": "RFP: To Develop the Ontario Digital Library Business Plan",
-      "page": 7
-    },
-    {
-      "level": "text",
-      "text": "March 2003",
-      "page": 7
-    },
-    {
-      "level": "text",
+      "level": "h3",
       "text": "Evaluation and Awarding of Contract",
       "page": 8
     },
@@ -1307,7 +1112,7 @@
       "page": 8
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "Demonstrated experience",
       "page": 8
     },
@@ -1317,12 +1122,12 @@
       "page": 8
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "Timeline and projected completion date",
       "page": 8
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "Other relevant factors as determined by the ODL Steering Committee",
       "page": 8
     },
@@ -1333,27 +1138,12 @@
     },
     {
       "level": "text",
-      "text": "(mridley@uoguelph.ca).",
+      "text": "(mridleyuoguelph.ca).",
       "page": 8
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "Bidders are asked not to contact any other member of the ODL Catalyst Team or the ODL Steering",
-      "page": 8
-    },
-    {
-      "level": "text",
-      "text": "Committee.",
-      "page": 8
-    },
-    {
-      "level": "h4",
-      "text": "RFP: To Develop the Ontario Digital Library Business Plan",
-      "page": 8
-    },
-    {
-      "level": "text",
-      "text": "March 2003",
       "page": 8
     },
     {
@@ -1362,22 +1152,22 @@
       "page": 9
     },
     {
-      "level": "h4",
+      "level": "text",
       "text": "Phase I: Business Planning",
       "page": 9
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "Timeline: March 2003  September 2003",
       "page": 9
     },
     {
-      "level": "text",
-      "text": "Funding Requested: $100,000 jointly funded by stakeholder groups and the provincial government.",
+      "level": "h3",
+      "text": "Funding Requested: 100,000 jointly funded by stakeholder groups and the provincial government.",
       "page": 9
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "Result: The ODL business plan",
       "page": 9
     },
@@ -1417,23 +1207,23 @@
       "page": 9
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "Phase II: Implementing and Transitioning",
       "page": 9
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "Timeline: April 2004  December 2006",
       "page": 9
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "Funding Requested: Funding from other states and provinces suggest that the ODL could receive",
       "page": 9
     },
     {
       "level": "text",
-      "text": "funding of up to $50 Million (over 3 years). Funding to be provided partnership of government, library",
+      "text": "funding of up to 50 Million (over 3 years). Funding to be provided partnership of government, library",
       "page": 9
     },
     {
@@ -1442,7 +1232,7 @@
       "page": 9
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "Result: The ODL is implemented and validated",
       "page": 9
     },
@@ -1452,7 +1242,7 @@
       "page": 9
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "that for ODL to be optimally successful libraries must transition to a new way of doing business and",
       "page": 9
     },
@@ -1472,7 +1262,7 @@
       "page": 9
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "The seed money requested will allow libraries to realign their budgets and services as the infrastructure",
       "page": 9
     },
@@ -1482,13 +1272,13 @@
       "page": 9
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "is every indication that existing budgets and methods of operating may be modified as a result of",
       "page": 9
     },
     {
       "level": "text",
-      "text": "recommendations . During this phase the polices, procedures, governance structures and accountability",
+      "text": "recommendations. During this phase the polices, procedures, governance structures and accountability",
       "page": 9
     },
     {
@@ -1512,22 +1302,22 @@
       "page": 9
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "Phase III: Operating and Growing the ODL",
       "page": 9
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "Timeline: January 2007 -",
       "page": 9
     },
     {
-      "level": "h4",
-      "text": "Funding: $50 Million annually ($35 Million requested from government)",
+      "level": "h3",
+      "text": "Funding: 50 Million annually (35 Million requested from government)",
       "page": 9
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "Result: The ODL is fully operational and sustainable",
       "page": 9
     },
@@ -1537,18 +1327,8 @@
       "page": 9
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "of the initiative and libraries will consolidate support around the ODL to grow resources and extend",
-      "page": 9
-    },
-    {
-      "level": "h4",
-      "text": "RFP: To Develop the Ontario Digital Library Business Plan",
-      "page": 9
-    },
-    {
-      "level": "text",
-      "text": "March 2003",
       "page": 9
     },
     {
@@ -1562,7 +1342,7 @@
       "page": 10
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "The ongoing funding of the ODL will be based on a partnership model involving all the key participants",
       "page": 10
     },
@@ -1617,27 +1397,22 @@
       "page": 10
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "1. that ODL expenditures will increase by 50% over a 10 year period",
       "page": 10
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "2. that government funding will decrease from 70% to 45% during that 10 year period",
       "page": 10
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "3. that library contributions, endowment and gifts/in-kind funding will increase from 30% to 55%",
       "page": 10
     },
     {
-      "level": "text",
-      "text": "during the same period",
-      "page": 10
-    },
-    {
-      "level": "h4",
+      "level": "h3",
       "text": "OVERVIEW OF ODL FUNDING MODEL",
       "page": 10
     },
@@ -1647,88 +1422,48 @@
       "page": 10
     },
     {
+      "level": "text",
+      "text": "35M (70%)",
+      "page": 10
+    },
+    {
       "level": "h3",
-      "text": "2007",
+      "text": "33.75M (45%)",
+      "page": 10
+    },
+    {
+      "level": "text",
+      "text": "10M (20%)",
       "page": 10
     },
     {
       "level": "h3",
-      "text": "2017",
+      "text": "22.5M (30%)",
       "page": 10
     },
     {
-      "level": "h4",
-      "text": "Government",
-      "page": 10
-    },
-    {
-      "level": "text",
-      "text": "$35M (70%)",
+      "level": "h3",
+      "text": "4.5M (9%)",
       "page": 10
     },
     {
       "level": "text",
-      "text": "$33.75M (45%)",
+      "text": "15M (20%)",
       "page": 10
     },
     {
-      "level": "h4",
-      "text": "Libraries",
+      "level": "h3",
+      "text": "0.5M (1%)",
       "page": 10
     },
     {
-      "level": "text",
-      "text": "$10M (20%)",
+      "level": "h3",
+      "text": "3.75M (5%)",
       "page": 10
     },
     {
-      "level": "text",
-      "text": "$22.5M (30%)",
-      "page": 10
-    },
-    {
-      "level": "h4",
-      "text": "Endowment",
-      "page": 10
-    },
-    {
-      "level": "text",
-      "text": "$4.5M (9%)",
-      "page": 10
-    },
-    {
-      "level": "text",
-      "text": "$15M (20%)",
-      "page": 10
-    },
-    {
-      "level": "text",
-      "text": "Gifts/In-Kind",
-      "page": 10
-    },
-    {
-      "level": "text",
-      "text": "$0.5M (1%)",
-      "page": 10
-    },
-    {
-      "level": "text",
-      "text": "$3.75M (5%)",
-      "page": 10
-    },
-    {
-      "level": "h4",
+      "level": "h3",
       "text": "TOTAL ANNUAL",
-      "page": 10
-    },
-    {
-      "level": "text",
-      "text": "$50M",
-      "page": 10
-    },
-    {
-      "level": "text",
-      "text": "$75M",
       "page": 10
     },
     {
@@ -1748,7 +1483,7 @@
     },
     {
       "level": "text",
-      "text": "A $50M budget leverages the consortium buying power of the provinces libraries to secure the best",
+      "text": "A 50M budget leverages the consortium buying power of the provinces libraries to secure the best",
       "page": 10
     },
     {
@@ -1757,7 +1492,7 @@
       "page": 10
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "this nature will ensure a core digital collection of sufficient scope and coverage to address a substantial",
       "page": 10
     },
@@ -1767,17 +1502,17 @@
       "page": 10
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "of the nature of the ODL digital collection is appended). The proposed ODL expenditures in 2006",
       "page": 10
     },
     {
       "level": "text",
-      "text": "represent an investment of $5.00 per citizen.",
+      "text": "represent an investment of 5.00 per citizen.",
       "page": 10
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "It is important to recognize that every new dollar per citizen invested in the Ontario Digital Library has a",
       "page": 10
     },
@@ -1787,28 +1522,18 @@
       "page": 10
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "strengthens every local library in Ontario by allowing them to reinvest existing dollars in new resources",
       "page": 10
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "that enhance local services. This multiplier means that for every dollar invested in ODL the return",
       "page": 10
     },
     {
       "level": "text",
-      "text": "on investment is worth $2 of value for Ontario.",
-      "page": 10
-    },
-    {
-      "level": "h4",
-      "text": "RFP: To Develop the Ontario Digital Library Business Plan",
-      "page": 10
-    },
-    {
-      "level": "text",
-      "text": "March 2003",
+      "text": "on investment is worth 2 of value for Ontario.",
       "page": 10
     },
     {
@@ -1817,12 +1542,12 @@
       "page": 11
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "ODL Steering Committee Terms of Reference",
       "page": 11
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "1. Preamble",
       "page": 11
     },
@@ -1833,7 +1558,7 @@
     },
     {
       "level": "text",
-      "text": "and supported by its diverse stakeholder communities (see: www.odl.on.ca ). The business",
+      "text": "and supported by its diverse stakeholder communities (see: www.odl.on.ca). The business",
       "page": 11
     },
     {
@@ -1847,7 +1572,7 @@
       "page": 11
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "2. Terms of Reference",
       "page": 11
     },
@@ -1867,7 +1592,7 @@
       "page": 11
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "2.1 developing a detailed business plan for the three-year implementation phase of the ODL, including",
       "page": 11
     },
@@ -1882,7 +1607,7 @@
       "page": 11
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "2.2 consulting with and reporting to stakeholder communities, to ensure open, consistent and two-way",
       "page": 11
     },
@@ -1897,12 +1622,12 @@
       "page": 11
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "2.3 recruiting and managing the business planner(s);",
       "page": 11
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "2.4 defining terms of reference and resource parameters for business planner(s), and authorizing",
       "page": 11
     },
@@ -1912,17 +1637,17 @@
       "page": 11
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "2.5 serving as a focus group for business planner(s) to test ideas;",
       "page": 11
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "2.6 providing signoff for business planner(s) at key decision points of business plan development;",
       "page": 11
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "2.7 securing commitment from library, government, and institutional stakeholders for implementation",
       "page": 11
     },
@@ -1932,12 +1657,12 @@
       "page": 11
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "2.8 presenting the business plan to funders",
       "page": 11
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "2.9 undertaking advocacy efforts to promote the ODL to the broader communities including library",
       "page": 11
     },
@@ -1947,7 +1672,7 @@
       "page": 11
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "3. Membership",
       "page": 11
     },
@@ -1957,12 +1682,7 @@
       "page": 11
     },
     {
-      "level": "text",
-      "text": "representatives to the steering committee",
-      "page": 11
-    },
-    {
-      "level": "h4",
+      "level": "h3",
       "text": "3.1 Schools:",
       "page": 11
     },
@@ -1973,36 +1693,36 @@
     },
     {
       "level": "text",
-      "text": "Coordinators of Ontario (TALCO) ( Executive Council of OSLA to name representative in",
+      "text": "Coordinators of Ontario (TALCO) (Executive Council of OSLA to name representative in",
       "page": 11
     },
     {
       "level": "text",
-      "text": "consultation with TALCO )",
+      "text": "consultation with TALCO)",
       "page": 11
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "3.2 Universities:",
       "page": 11
     },
     {
       "level": "text",
-      "text": "- Ontario Council of University Libraries (OCUL) ( OCUL to name )",
+      "text": "- Ontario Council of University Libraries (OCUL) (OCUL to name)",
       "page": 11
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "3.3 Colleges:",
       "page": 11
     },
     {
       "level": "text",
-      "text": "- Bibliocentre, and Heads of Libraries and Learning Resources (UAG and HLLR to name )",
+      "text": "- Bibliocentre, and Heads of Libraries and Learning Resources (UAG and HLLR to name)",
       "page": 11
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "3.4 Public libraries:",
       "page": 11
     },
@@ -2023,22 +1743,12 @@
     },
     {
       "level": "text",
-      "text": "( Executives of AMPLO, ARUPLO, ASPLO and CELPLO to name )",
+      "text": "(Executives of AMPLO, ARUPLO, ASPLO and CELPLO to name)",
       "page": 11
     },
     {
-      "level": "h4",
-      "text": "RFP: To Develop the Ontario Digital Library Business Plan",
-      "page": 11
-    },
-    {
-      "level": "text",
-      "text": "March 2003",
-      "page": 11
-    },
-    {
-      "level": "h4",
-      "text": "3.5 Ontario Library Association representative (ex-officio) ( OLA to appoint one representative )",
+      "level": "h3",
+      "text": "3.5 Ontario Library Association representative (ex-officio) (OLA to appoint one representative)",
       "page": 12
     },
     {
@@ -2057,7 +1767,7 @@
       "page": 12
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "3.6 It is anticipated that as planning for the ODL evolves, the Steering Committee may, at its",
       "page": 12
     },
@@ -2067,12 +1777,12 @@
       "page": 12
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "4. Appointment Criteria and Process",
       "page": 12
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "4.1",
       "page": 12
     },
@@ -2084,11 +1794,6 @@
     {
       "level": "text",
       "text": "representatives to the Steering Committee.",
-      "page": 12
-    },
-    {
-      "level": "text",
-      "text": "4.2",
       "page": 12
     },
     {
@@ -2133,16 +1838,16 @@
     },
     {
       "level": "text",
-      "text": "meetings plus 2-3 working days per month on related activities .",
+      "text": "meetings plus 2-3 working days per month on related activities.",
       "page": 12
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "5. Term",
       "page": 12
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "Expected term on the Steering Committee is the time required to complete development of the",
       "page": 12
     },
@@ -2152,7 +1857,7 @@
       "page": 12
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "6. Chair",
       "page": 12
     },
@@ -2187,12 +1892,12 @@
       "page": 12
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "7. Meetings",
       "page": 12
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "It is expected that in person meetings are held once per month and the majority of business will be",
       "page": 12
     },
@@ -2202,12 +1907,12 @@
       "page": 12
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "8. Lines of Accountability and Communication",
       "page": 12
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "8.1 The Steering Committee is accountable to the Province of Ontario, and to its business plan",
       "page": 12
     },
@@ -2217,7 +1922,7 @@
       "page": 12
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "8.2 The role of the Ontario Library Association is to assume responsibility for funds contributed by the",
       "page": 12
     },
@@ -2232,7 +1937,7 @@
       "page": 12
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "financial reports to the Steering Committee as requested and shall comply with all",
       "page": 12
     },
@@ -2242,17 +1947,7 @@
       "page": 12
     },
     {
-      "level": "h4",
-      "text": "RFP: To Develop the Ontario Digital Library Business Plan",
-      "page": 12
-    },
-    {
-      "level": "text",
-      "text": "March 2003",
-      "page": 12
-    },
-    {
-      "level": "h4",
+      "level": "h3",
       "text": "8.3 The Steering Committee is accountable to its constituent groups and other stakeholders for",
       "page": 13
     },
@@ -2262,7 +1957,7 @@
       "page": 13
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "is responsible for strong liaison with government particularly the Chief Information Officer",
       "page": 13
     },
@@ -2272,32 +1967,32 @@
       "page": 13
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "9. Financial and Administrative Policies",
       "page": 13
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "9.1 Service on the Steering Committee is non-remunerative",
       "page": 13
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "9.2 Travel and meeting expenses for Steering Committee members are reimbursed according to the",
       "page": 13
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "policies of the Ontario Library Association",
       "page": 13
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "9.3 Conflict of Interest:",
       "page": 13
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "The ODL Steering Committee will function according to standard conflict of interest guidelines",
       "page": 13
     },
@@ -2322,27 +2017,17 @@
       "page": 13
     },
     {
-      "level": "h4",
-      "text": "RFP: To Develop the Ontario Digital Library Business Plan",
-      "page": 13
-    },
-    {
-      "level": "text",
-      "text": "March 2003",
-      "page": 13
-    },
-    {
       "level": "text",
       "text": "Appendix C:",
       "page": 14
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "ODLs Envisioned Electronic Resources",
       "page": 14
     },
     {
-      "level": "text",
+      "level": "h3",
       "text": "The purpose of the ODL is to provide equal access to information for all Ontario citizens through",
       "page": 14
     },
@@ -2367,7 +2052,7 @@
       "page": 14
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "1. Reference Resources",
       "page": 14
     },
@@ -2452,7 +2137,7 @@
       "page": 14
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "2. Subject Guides",
       "page": 14
     },
@@ -2502,7 +2187,7 @@
       "page": 14
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "3. Educational tool-kits",
       "page": 14
     },
@@ -2532,18 +2217,8 @@
       "page": 14
     },
     {
-      "level": "h4",
+      "level": "h3",
       "text": "4. Journals, books, maps, music etc.",
-      "page": 14
-    },
-    {
-      "level": "h4",
-      "text": "RFP: To Develop the Ontario Digital Library Business Plan",
-      "page": 14
-    },
-    {
-      "level": "text",
-      "text": "March 2003",
       "page": 14
     }
   ]

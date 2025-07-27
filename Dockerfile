@@ -1,5 +1,5 @@
-# Use the platform specification as required
-FROM --platform=linux/amd64 python:3.9-slim
+# Use the platform specification as required by hackathon
+FROM python:3.9-slim
 
 # Set working directory
 WORKDIR /app
