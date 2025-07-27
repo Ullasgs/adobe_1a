@@ -6,8 +6,9 @@
 
 ```bash
 git clone https://github.com/Ullasgs/adobe_1a
-Navigate to the folder in terminal
 ```
+
+###Navigate to the folder in terminal
 ```bash
 docker build --platform linux/amd64 -t pdf-processor .
 ```
