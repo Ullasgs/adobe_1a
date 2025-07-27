@@ -19,18 +19,14 @@ class LayoutBasedProcessor:
         
     def extract_title_from_doc(self, doc: fitz.Document) -> str:
         """Extract title from document"""
-        # Try metadata first
         title = doc.metadata.get("title", "").strip()
         if title and len(title) > 5:
             return self.clean_text(title)
         
-        # Look at first page using simple text extraction
         if len(doc) > 0:
             first_page = doc[0]
-            # Use simple text method to avoid fragmentation
             full_text = first_page.get_text()
             
-            # Find the first substantial line as potential title
             lines = full_text.split('\n')
             for line in lines:
                 cleaned_line = self.clean_text(line)
@@ -46,25 +42,20 @@ class LayoutBasedProcessor:
         if not text:
             return ""
         
-        # Remove newlines and normalize whitespace
         text = re.sub(r'[\r\n]+', ' ', text)
         text = re.sub(r'\s+', ' ', text.strip())
         
-        # Remove excessive character repetitions
         text = re.sub(r'(.)\1{3,}', r'\1', text)
         
-        # Fix common OCR errors
         text = re.sub(r'\bRee+quest\b', 'Request', text, flags=re.IGNORECASE)
         text = re.sub(r'\bfoo+r\b', 'for', text, flags=re.IGNORECASE)
         text = re.sub(r'\bPropoaal\b', 'Proposal', text, flags=re.IGNORECASE)
         text = re.sub(r'\boposal\b', 'Proposal', text, flags=re.IGNORECASE)
         text = re.sub(r'\bOntarios\b', "Ontario's", text, flags=re.IGNORECASE)
         
-        # Remove weird patterns like "RFP: R RFP: R"
         text = re.sub(r'\b(\w+):\s*\w\s+\1:\s*\w\s+', r'\1: Request', text)
         text = re.sub(r'\b(\w+)\s+\1\s+\1\s+', r'\1 ', text)
         
-        # Clean up unwanted characters
         text = re.sub(r'[^\w\s\.,;:!?()\-\'\"\/&%]', '', text)
         
         return text.strip()
@@ -92,7 +83,6 @@ class LayoutBasedProcessor:
         is_bold = context.get('is_bold', False)
         is_heading_pattern = self.is_heading_like(text)
         
-        # Title-like characteristics
         words = text.split()
         is_title_like = (
             len(words) >= 3 and len(words) <= 20 and
@@ -101,7 +91,6 @@ class LayoutBasedProcessor:
             not text.endswith('.')
         )
         
-        # Conservative classification
         if font_size >= self.heading_thresholds['h1'] and (is_heading_pattern or (is_bold and is_title_like)):
             return 'h1'
         elif font_size >= self.heading_thresholds['h2'] and (is_heading_pattern or is_title_like):
@@ -120,35 +109,29 @@ class LayoutBasedProcessor:
         outline = []
         
         for page_num, page in enumerate(doc, start=1):
-            # Use get_text() with layout preservation
             page_text = page.get_text(flags=fitz.TEXT_PRESERVE_LIGATURES | fitz.TEXT_PRESERVE_WHITESPACE)
             
             if not page_text.strip():
                 continue
             
-            # Split into logical lines and process
             lines = page_text.split('\n')
-            processed_lines = set()  # To avoid duplicates
+            processed_lines = set()  
             
             for line in lines:
                 cleaned_line = self.clean_text(line)
                 
-                # Skip empty, very short, or already processed lines
                 if (not cleaned_line or 
                     len(cleaned_line) < 3 or 
                     cleaned_line in processed_lines):
                     continue
                 
-                # Skip obvious page numbers, headers, footers
-                if (re.match(r'^\d+$', cleaned_line) or  # Just a number
+                if (re.match(r'^\d+$', cleaned_line) or  
                     re.match(r'^Page\s+\d+', cleaned_line, re.IGNORECASE) or
                     len(cleaned_line) < 3):
                     continue
                 
-                # Get font information for this line (approximate)
                 font_info = self.get_font_info_for_text(page, cleaned_line)
                 
-                # Classify the text level
                 level = self.classify_text_level(cleaned_line, font_info)
                 
                 outline.append({
@@ -161,21 +144,17 @@ class LayoutBasedProcessor:
         
         doc.close()
         
-        # Final cleanup to remove remaining duplicates and fragments
         outline = self.final_deduplication(outline)
         
         return title, outline
     
     def get_font_info_for_text(self, page, text: str) -> Dict:
         """Get approximate font information for text"""
-        # Default values
         font_info = {'font_size': 12, 'is_bold': False}
         
         try:
-            # Get detailed text information
             text_dict = page.get_text("dict")
             
-            # Look for matching text in spans
             for block in text_dict.get("blocks", []):
                 if "lines" not in block:
                     continue
@@ -184,14 +163,12 @@ class LayoutBasedProcessor:
                     for span in line.get("spans", []):
                         span_text = span.get("text", "").strip()
                         
-                        # If this span contains part of our text
                         if span_text and span_text in text:
                             font_info['font_size'] = max(font_info['font_size'], span.get("size", 12))
-                            if span.get("flags", 0) & 16:  # Bold flag
+                            if span.get("flags", 0) & 16:  
                                 font_info['is_bold'] = True
                                 
         except Exception:
-            # If font analysis fails, use defaults
             pass
         
         return font_info
@@ -201,7 +178,6 @@ class LayoutBasedProcessor:
         if not outline:
             return outline
         
-        # Add index to maintain original order, then sort by page
         for i, item in enumerate(outline):
             item['_original_index'] = i
         
@@ -212,7 +188,6 @@ class LayoutBasedProcessor:
         for current in outline:
             current_text = current['text'].lower().strip()
             
-            # Check if this is a fragment of something we already have
             is_fragment = False
             items_to_remove = []
             
@@ -224,21 +199,17 @@ class LayoutBasedProcessor:
                     is_fragment = True
                     break
                 
-                # Check if current is a fragment of existing
                 if len(current_text) < len(existing_text) and current_text in existing_text:
                     is_fragment = True
                     break
                 
-                # Check if existing is a fragment of current (mark for removal)
                 if len(existing_text) < len(current_text) and existing_text in current_text:
                     items_to_remove.append(i)
             
-            # Remove items marked for removal (in reverse order to maintain indices)
             for i in reversed(items_to_remove):
                 deduplicated.pop(i)
             
             if not is_fragment:
-                # Remove the temporary index before adding
                 current_copy = current.copy()
                 if '_original_index' in current_copy:
                     del current_copy['_original_index']
@@ -287,9 +258,9 @@ class LayoutBasedProcessor:
             
             if self.process_single_pdf(str(pdf_file), str(output_file)):
                 processed_count += 1
-                print(f"✅ {pdf_file.name} -> {output_file.name}")
+                print(f" {pdf_file.name} -> {output_file.name}")
             else:
-                print(f"❌ Failed: {pdf_file.name}")
+                print(f" Failed: {pdf_file.name}")
         
         print(f"\nCompleted: {processed_count}/{len(pdf_files)} files")
 
