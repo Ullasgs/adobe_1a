@@ -3,6 +3,10 @@
 
 ### Build Command
 
+
+```bash
+git clone https://github.com/Ullasgs/adobe_1a
+```
 ```bash
 docker build --platform linux/amd64 -t pdf-processor .
 ```
