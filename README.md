@@ -1,4 +1,4 @@
-# PDF Processing Solution - Adobe India Hackathon 2025
+# PDF Processing Solution 1(a) - Adobe India Hackathon 2025
 ## Installation and Usage
 
 ### Build Command
@@ -64,7 +64,6 @@ This solution implements a PDF processing system that extracts structured data f
 - **json**: JSON output generation
 - **re**: Regular expression pattern matching
 - **pathlib**: Modern path handling
-- **typing**: Type hints for better code quality
 
 
 
@@ -156,16 +155,3 @@ The solution generates JSON output that strictly follows the required schema:
 - Dockerfile present and functional
 - Complete documentation provided
 
-## Future Enhancements
-
-Potential improvements for more complex scenarios:
-
-1. **Table Extraction**: Enhanced handling of tabular data
-2. **Image Analysis**: OCR integration for image-based text
-3. **Multi-Language Support**: Better handling of non-English documents
-4. **Advanced Structure Detection**: ML-based heading classification
-5. **Parallel Processing**: Multi-threaded processing for large batches
-
----
-
-**Note**: This solution prioritizes performance, accuracy, and compliance with the hackathon requirements while maintaining simplicity and reliability.
