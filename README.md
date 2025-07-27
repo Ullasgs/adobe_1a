@@ -145,16 +145,16 @@ The solution generates JSON output that strictly follows the required schema:
 
 ## Compliance Checklist
 
-- ✅ Processes all PDFs from `/app/input` directory
-- ✅ Generates `filename.json` for each `filename.pdf`
-- ✅ Output format matches required JSON schema
-- ✅ No internet access required during execution
-- ✅ Works on AMD64 architecture
-- ✅ Uses only open-source libraries
-- ✅ Memory usage optimized for 16GB constraint
-- ✅ Processing time optimized for 10-second constraint
-- ✅ Dockerfile present and functional
-- ✅ Complete documentation provided
+- Processes all PDFs from `/app/input` directory
+- Generates `filename.json` for each `filename.pdf`
+- Output format matches required JSON schema
+- No internet access required during execution
+- Works on AMD64 architecture
+- Uses only open-source libraries
+- Memory usage optimized for 16GB constraint
+- Processing time optimized for 10-second constraint
+- Dockerfile present and functional
+- Complete documentation provided
 
 ## Future Enhancements
 
