@@ -1,4 +1,17 @@
 # PDF Processing Solution - Adobe India Hackathon 2025
+## Installation and Usage
+
+### Build Command
+
+```bash
+docker build --platform linux/amd64 -t pdf-processor .
+```
+
+### Run Command
+
+```bash
+docker run --rm -v $(pwd)/input:/app/input:ro -v $(pwd)/output:/app/output --network none pdf-processor
+```
 
 ## Overview
 
@@ -53,19 +66,7 @@ This solution implements a PDF processing system that extracts structured data f
 - **pathlib**: Modern path handling
 - **typing**: Type hints for better code quality
 
-## Installation and Usage
 
-### Build Command
-
-```bash
-docker build --platform linux/amd64 -t pdf-processor .
-```
-
-### Run Command
-
-```bash
-docker run --rm -v $(pwd)/input:/app/input:ro -v $(pwd)/output:/app/output --network none pdf-processor
-```
 
 ## Performance Optimizations
 
