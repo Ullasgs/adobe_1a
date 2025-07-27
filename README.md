@@ -1,4 +1,17 @@
 # PDF Processing Solution - Adobe India Hackathon 2025
+## Installation and Usage
+
+### Build Command
+
+```bash
+docker build --platform linux/amd64 -t pdf-processor .
+```
+
+### Run Command
+
+```bash
+docker run --rm -v $(pwd)/input:/app/input:ro -v $(pwd)/output:/app/output --network none pdf-processor
+```
 
 ## Overview
 
@@ -53,19 +66,7 @@ This solution implements a PDF processing system that extracts structured data f
 - **pathlib**: Modern path handling
 - **typing**: Type hints for better code quality
 
-## Installation and Usage
 
-### Build Command
-
-```bash
-docker build --platform linux/amd64 -t pdf-processor .
-```
-
-### Run Command
-
-```bash
-docker run --rm -v $(pwd)/input:/app/input:ro -v $(pwd)/output:/app/output --network none pdf-processor
-```
 
 ## Performance Optimizations
 
@@ -144,16 +145,16 @@ The solution generates JSON output that strictly follows the required schema:
 
 ## Compliance Checklist
 
-- ✅ Processes all PDFs from `/app/input` directory
-- ✅ Generates `filename.json` for each `filename.pdf`
-- ✅ Output format matches required JSON schema
-- ✅ No internet access required during execution
-- ✅ Works on AMD64 architecture
-- ✅ Uses only open-source libraries
-- ✅ Memory usage optimized for 16GB constraint
-- ✅ Processing time optimized for 10-second constraint
-- ✅ Dockerfile present and functional
-- ✅ Complete documentation provided
+- Processes all PDFs from `/app/input` directory
+- Generates `filename.json` for each `filename.pdf`
+- Output format matches required JSON schema
+- No internet access required during execution
+- Works on AMD64 architecture
+- Uses only open-source libraries
+- Memory usage optimized for 16GB constraint
+- Processing time optimized for 10-second constraint
+- Dockerfile present and functional
+- Complete documentation provided
 
 ## Future Enhancements
 
