@@ -8,7 +8,10 @@
 git clone https://github.com/Ullasgs/adobe_1a
 ```
 
-### Navigate to the project in terminal, then build
+### Navigate to the project in terminal
+cd adobe_1a
+
+### Build docker image
 ```bash
 docker build --platform linux/amd64 -t pdf-processor .
 ```
